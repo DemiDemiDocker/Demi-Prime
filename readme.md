@@ -21,7 +21,7 @@
 - [x] Add `.env.dev` and `.env.prod`
 - [x] Implement environment loader (`NODE_ENV` switch)
 - [x] Create `Client` instance with proper Discord intents
-- [ ] Auto-load command and event handlers
+- [x] Auto-load command and event handlers
 
 ---
 
@@ -30,8 +30,8 @@
 **Objective:** Configure SQL database and Redis caching for performance and analytics.
 
 ### ✅ Tasks
-- [ ] Install Sequelize or Prisma ORM  
-- [ ] Connect to SQL database (SQLite/MySQL/Postgres)
+- [x] Install Prisma ORM  
+- [ ] Connect to SQL database (SQLite/Postgres) (Dev = SQLite | Prod = Postgres)
 - [ ] Create models:
   - [ ] `User` — Discord ID, join date, XP, message count
   - [ ] `Guild` — settings, prefix, log channels
