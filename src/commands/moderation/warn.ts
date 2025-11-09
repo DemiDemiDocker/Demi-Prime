@@ -63,13 +63,13 @@ const command: Command = {
     
     try {
       // Only run if using PostgreSQL
-      if (config.DATABASE_TYPE !== 'postgres') {
+      if (CONFIG.databaseType !== 'postgres') {
         logger.debug('Warn command: Requires PostgreSQL database');
         await interaction.reply({ 
           embeds: [createEmbed({
             type: 'error',
             title: 'Database Error',
-            description: `This command requires PostgreSQL, but you're using ${config.DATABASE_TYPE}`,
+            description: `This command requires PostgreSQL, but you're using ${CONFIG.databaseType}`,
             timestamp: true
           })],
           ephemeral: true 
