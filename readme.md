@@ -9,18 +9,18 @@
 **Objective:** Establish clean project structure and configuration for both development and production.
 
 ### ✅ Tasks
-- [ ] Initialize project with `npm init` or `pnpm init`
-- [ ] Set up folders:
+- [x] Initialize project with `npm init` or `pnpm init`
+- [x] Set up folders:
   - `/src`, `/commands`, `/events`, `/config`, `/database`, `/dashboard`
-- [ ] Install dependencies:
+- [x] Install dependencies:
   ```bash
   npm install discord.js dotenv sequelize sqlite3
   npm install -D typescript ts-node nodemon eslint prettier
   ```
-- [ ] Configure TypeScript and ESLint
-- [ ] Add `.env.dev` and `.env.prod`
-- [ ] Implement environment loader (`NODE_ENV` switch)
-- [ ] Create `Client` instance with proper Discord intents
+- [x] Configure TypeScript and ESLint
+- [x] Add `.env.dev` and `.env.prod`
+- [x] Implement environment loader (`NODE_ENV` switch)
+- [x] Create `Client` instance with proper Discord intents
 - [ ] Auto-load command and event handlers
 
 ---
