@@ -6,7 +6,7 @@ services:
     container_name: my_postgres
     restart: unless-stopped
     env_file:
-      - .env
+      - .env.prod
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}

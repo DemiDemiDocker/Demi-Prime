@@ -56,7 +56,7 @@
   ```ts
   createEmbed(title, description, color)
   ```
-- [ ] Format responses with Discord embeds
+- [x] Format responses with Discord embeds
 - [x] Implement error handler and logging system
 
 ---
@@ -84,7 +84,7 @@
 **Objective:** Track and visualize member activity and guild statistics.
 
 ### ✅ Tasks
-- [ ] Log messages, reactions, and join/leave events
+- [x] Log messages, reactions, and join/leave events
 - [ ] Store data in `Analytics` table
 - [ ] Update activity counts periodically (daily summaries)
 - [ ] Add `/stats` and `/leaderboard` commands
