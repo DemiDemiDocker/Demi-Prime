@@ -4,6 +4,8 @@
     "start:prod": "cross-env NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "better-sqlite3": "^12.4.1",
     "discord.js": "^14.24.2",
     "dotenv": "^17.2.3",
     "sequelize": "^6.37.7",

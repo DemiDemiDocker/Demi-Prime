@@ -1,6 +1,0 @@
-npm install discord.js dotenv
-npm install -D typescript tsx tsup
-npm fund
-
-
-
