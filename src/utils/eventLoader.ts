@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { Client } from 'discord.js';
-import { Events } from 'discord.js';
+import { Event } from '../types/discord';
 import { logger } from './logger';
 
 /**
@@ -32,9 +32,9 @@ export async function loadEvents(client: Client): Promise<number> {
         if ('name' in event && 'execute' in event) {
           // Register the event with the client
           if (event.once) {
-            client.once(event.name, (...args) => event.execute(...args));
+            client.once(event.name, (...args) => event.execute(client, ...args));
           } else {
-            client.on(event.name, (...args) => event.execute(...args));
+            client.on(event.name, (...args) => event.execute(client, ...args));
           }
           
           loadedCount++;

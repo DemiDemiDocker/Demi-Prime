@@ -1,4 +1,4 @@
-import { config } from '../config/config';
+import { CONFIG } from '../config';
 import { db as jsonDb } from './database';
 import { pgdb } from './postgresDatabase';
 import { logger } from '../utils/logger';
@@ -11,15 +11,15 @@ class DatabaseFactory {
    * Get the database instance based on configuration
    */
   public static getDatabase() {
-    logger.info(`Using ${config.DATABASE_TYPE} database`);
+    logger.info(`Using ${CONFIG.databaseType} database`);
     
-    switch (config.DATABASE_TYPE) {
+    switch (CONFIG.databaseType) {
       case 'postgres':
         return pgdb;
       case 'json':
         return jsonDb;
       default:
-        logger.warn(`Unknown database type: ${config.DATABASE_TYPE}, falling back to JSON database`);
+        logger.warn(`Unknown database type: ${CONFIG.databaseType}, falling back to JSON database`);
         return jsonDb;
     }
   }

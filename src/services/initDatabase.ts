@@ -48,8 +48,8 @@ export async function initDatabase(): Promise<void> {
   logger.info('Initializing database...');
 
   // Only run initialization for PostgreSQL database
-  if (CONFIG.DATABASE_TYPE !== 'postgres') {
-    logger.info(`Skipping database initialization for ${CONFIG.DATABASE_TYPE} database`);
+  if (CONFIG.databaseType !== 'postgres') {
+    logger.info(`Skipping database initialization for ${CONFIG.databaseType} database`);
     return;
   }
 
