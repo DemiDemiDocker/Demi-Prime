@@ -1,6 +1,6 @@
 import { Client, GatewayIntentBits, Collection, Events, WebhookClient, ThreadChannel } from 'discord.js';
 import 'dotenv/config';
-import { CONFIG } from './config';
+import { CONFIG } from '../config';
 
 // Create bot instance and intent information - will change later
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });

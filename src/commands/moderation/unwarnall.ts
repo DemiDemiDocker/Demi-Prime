@@ -2,7 +2,7 @@ import { SlashCommandBuilder, PermissionFlagsBits, GuildMember, User } from 'dis
 import { Command } from '../../types/discord';
 import { createEmbed } from '../../utils/embedBuilder';
 import { pgdb } from '../../services/postgresDatabase';
-import { config } from '../../config/config';
+import { CONFIG } from '../../config';
 import { logger } from '../../utils/logger';
 import { ensureUserExists, ensureGuildExists } from '../../utils/dbHelpers';
 import { ChatInputCommandInteraction } from 'discord.js';
