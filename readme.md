@@ -50,14 +50,14 @@
 **Objective:** Build basic interaction commands with embed-based responses.
 
 ### ✅ Tasks
-- [ ] Implement command loader
-- [ ] Create `/ping`, `/help`, and `/about`
-- [ ] Add embed utility:
+- [x] Implement command loader
+- [x] Create `/ping`, `/help`, and `/about`
+- [x] Add embed utility:
   ```ts
   createEmbed(title, description, color)
   ```
 - [ ] Format responses with Discord embeds
-- [ ] Implement error handler and logging system
+- [x] Implement error handler and logging system
 
 ---
 
@@ -66,12 +66,12 @@
 **Objective:** Add admin and moderation tools with SQL logging.
 
 ### ✅ Tasks
-- [ ] Commands:
-  - [ ] `/kick @user [reason]`
-  - [ ] `/ban @user [reason]`
-  - [ ] `/mute @user [time]`
-  - [ ] `/warn @user [reason]`
-  - [ ] `/purge [count]`
+- [x] Commands:
+  - [x] `/kick @user [reason]`
+  - [x] `/ban @user [reason]`
+  - [x] `/mute @user [time]`
+  - [x] `/warn @user [reason]`
+  - [x] `/purge [count]`
 - [ ] Log actions to SQL database
 - [ ] Create `/warnings` command
 - [ ] Add role/permission validation
@@ -162,10 +162,10 @@
 | Milestone | Status | Progress |
 |------------|---------|-----------|
 | Environment Setup | ✅ Completed | 🟩🟩🟩🟩🟩 |
-| Database & Redis | 🟨 In Progress | 🟩🟩🟨⬜⬜ |
-| Core Commands | ⏳ Planned | ⬜⬜⬜⬜⬜ |
-| Moderation | ⏳ Planned | ⬜⬜⬜⬜⬜ |
-| Analytics | ⏳ Planned | ⬜⬜⬜⬜⬜ |
-| Dashboard | ⏳ Planned | ⬜⬜⬜⬜⬜ |
-| Warframe Integration | ⏳ Planned | ⬜⬜⬜⬜⬜ |
-| Deployment | ⏳ Planned | ⬜⬜⬜⬜⬜ |
+| Database & Redis | 🟨 In Progress | 🟩🟩🟩🟨⬜ |
+| Core Commands | ⏳ In Progress | 🟩🟩🟩🟨⬜ |
+| Moderation | ⏳ In Progress | 🟩🟩🟩🟨⬜ |
+| Analytics | ⏳ In Progress | ⬜⬜⬜⬜⬜ |
+| Dashboard | ⏳ In Progress | ⬜⬜⬜⬜⬜ |
+| Warframe Integration | ⏳ In Progress | ⬜⬜⬜⬜⬜ |
+| Deployment | ⏳ In Progress | ⬜⬜⬜⬜⬜ |
